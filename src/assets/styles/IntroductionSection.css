@@ -1,0 +1,87 @@
+/* General styling for the Introduction section */
+.introduction-section {
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.light-mode .introduction-section {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.light-mode .introduction-section h1 {
+  color: #333;
+}
+
+.light-mode .introduction-section p {
+  color: #666;
+}
+
+/* Dark Mode */
+.dark-mode .introduction-section {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode .introduction-section h1 {
+  color: #ffffff;
+}
+
+.dark-mode .introduction-section p {
+  color: #cccccc;
+}
+
+/* Links styling common */
+.intro-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Light Mode Links */
+.light-mode .intro-links a {
+  color: #007bff;
+}
+
+.light-mode .intro-links a:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Dark Mode Links */
+.dark-mode .intro-links a {
+  color: #66b2ff;
+}
+
+.dark-mode .intro-links a:hover {
+  color: #3399ff;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .introduction-section {
+    padding: 40px 15px;
+  }
+
+  .introduction-section h1 {
+    font-size: 2.2em;
+  }
+
+  .introduction-section p {
+    font-size: 1em;
+  }
+
+  .intro-links a {
+    font-size: 1em;
+    margin: 10px 5px;
+  }
+}

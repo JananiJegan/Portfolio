@@ -1,0 +1,80 @@
+/* Skills Section Styling */
+.skills-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f0f0f0; /* Light mode default */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Skills Section */
+.light-mode .skills-section {
+  background-color: #f0f0f0;
+  color: #333; /* Dark text for light mode */
+}
+
+/* Dark Mode Skills Section */
+.dark-mode .skills-section {
+  background-color: #333; /* Dark background for dark mode */
+  color: #ddd; /* Light text for dark mode */
+}
+
+/* Skills Section Title */
+.skills-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skill Item */
+.skill-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Skill Name */
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  color: inherit; /* Inherit color from section */
+}
+
+/* Skill Bar (background) */
+.skill-bar {
+  background-color: #ddd; /* Light background for skill bar */
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Dark Mode Skill Bar */
+.dark-mode .skill-bar {
+  background-color: #555; /* Darker background for skill bar */
+}
+
+/* Skill Level (progress bar) */
+.skill-level {
+  background-color: #007bff;
+  height: 10px;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+  text-align: right;
+  color: white;
+  padding-right: 5px;
+  box-sizing: border-box;
+  font-size: 0.7em;
+}
+
+/* Dark Mode Skill Level */
+.dark-mode .skill-level {
+  background-color: #0056b3; /* Darker blue for progress in dark mode */
+}

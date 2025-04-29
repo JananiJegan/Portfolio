@@ -1,0 +1,64 @@
+/* Project Card Styling */
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Project Card */
+.light-mode .project-card {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-mode .project-card .tech-stack,
+.light-mode .project-card .project-links a {
+  color: #777;
+}
+
+/* Dark Mode Project Card */
+.dark-mode .project-card {
+  background-color: #2d2d2d;
+  color: #ddd;
+}
+
+.dark-mode .project-card .tech-stack,
+.dark-mode .project-card .project-links a {
+  color: #bbb;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: inherit; /* Inherit color from parent element */
+}
+
+.project-card p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: inherit; /* Inherit color from parent element */
+}
+
+.project-card .tech-stack {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.project-card .project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

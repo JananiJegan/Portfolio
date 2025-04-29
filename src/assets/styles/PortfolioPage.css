@@ -1,0 +1,35 @@
+/* Portfolio Page Styling */
+.portfolio-page {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Portfolio Page */
+.light-mode .portfolio-page {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Dark Mode Portfolio Page */
+.dark-mode .portfolio-page {
+  background-color: #1c1c1c;
+  color: #ddd;
+}
+
+/* Additional Customizations for Dark/Light Mode if needed */
+.light-mode .portfolio-page h1,
+.light-mode .portfolio-page p {
+  color: #333;
+}
+
+.dark-mode .portfolio-page h1,
+.dark-mode .portfolio-page p {
+  color: #ddd;
+}

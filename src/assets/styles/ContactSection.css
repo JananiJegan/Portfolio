@@ -1,0 +1,131 @@
+/* Contact Section Styling */
+.contact-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.light-mode .contact-section {
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+  color: #333;
+}
+
+.light-mode .contact-section h2 {
+  color: #333;
+}
+
+.light-mode .contact-section p {
+  color: #555;
+}
+
+/* Dark Mode */
+.dark-mode .contact-section {
+  background-color: #1e1e1e;
+  border-top: 1px solid #444;
+  color: #eee;
+}
+
+.dark-mode .contact-section h2 {
+  color: #ffffff;
+}
+
+.dark-mode .contact-section p {
+  color: #cccccc;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+
+/* Light Mode Input Fields */
+.light-mode input,
+.light-mode textarea {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+/* Dark Mode Input Fields */
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2e2e2e;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Submit Button Styling */
+button {
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-section h2 {
+    font-size: 2em;
+  }
+
+  .contact-section p {
+    font-size: 1em;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}

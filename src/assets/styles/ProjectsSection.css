@@ -1,0 +1,68 @@
+/* Projects Section Styling */
+.projects-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #e0e0e0; /* Light mode default */
+  color: #333; /* Default text color for light mode */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Projects Section */
+.light-mode .projects-section {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Dark Mode Projects Section */
+.dark-mode .projects-section {
+  background-color: #2d2d2d; /* Dark background */
+  color: #ddd; /* Light text for dark mode */
+}
+
+/* Heading Styling */
+.projects-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: inherit; /* Inherit color from the parent section */
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Category Buttons */
+.category-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Category Button Styles */
+.category-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  color: #fff; /* Text color for the button */
+}
+
+/* Active Button Style */
+.category-buttons button.active {
+  background-color: #0056b3;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
