@@ -33,7 +33,7 @@ function LoginPage() {
             console.log("Login successful", result);
             localStorage.setItem('isAuthenticated', 'true');
             localStorage.setItem('loggedInUser', JSON.stringify(result.user));
-            navigate('/');
+            navigate('/portfolio');
         } catch (err) {
             setError(err.message);
             console.error("Login Error:", err);
